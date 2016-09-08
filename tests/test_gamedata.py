@@ -21,5 +21,5 @@ def test_gamedata_init_without_name():
     When it is missing, the initializer should raise ValueError.
     """
     sample = os.path.join(sample_dir, 'sample_noname.json')
-    with pytest.raises(ValueError):
+    with pytest.raises(NameError):
         game = yg.GameData(sample)
