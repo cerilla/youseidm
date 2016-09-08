@@ -1,1 +1,1 @@
-from youseidm.campaign import *
+__all__ = ['campaign', 'game']
